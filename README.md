@@ -5,4 +5,4 @@ This library parse multiple query of MySQLDump output file. mysqli can not execu
 * functions
 * trigger
 
-ParseSQL designed to parse multiple query and ready for executed using mysql_query. This library is usefull to create database structure or restore database from sql file.
+ParseSQL designed to parse multiple query and ready to be executed using mysql_query. This library is usefull to create database structure or restore database from sql file.
