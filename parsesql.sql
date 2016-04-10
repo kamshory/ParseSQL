@@ -44,7 +44,7 @@ INSERT INTO `member` (`member_id`, `name`, `username`, `gender`, `birth_day`, `t
 -- Trigger `member`
 --
 DELIMITER //
-CREATE TRIGGER `after_delete_member` BEFORE DELETE ON `member`
+CREATE TRIGGER `after_delete_member` AFTER DELETE ON `member`
  FOR EACH ROW begin
 delete from `phone` where `phone`.`member_id` = OLD.`member_id`;
 end
