@@ -1,11 +1,24 @@
 <?php
 function parseSQL($sql_text) 
 {
-	$arr = explode("\n", $sql_text);
+	$sql_text = str_replace("\n", "\r\n", $sql_text);
+	$sql_text = str_replace("\r\r\n", "\r\n", $sql_text);
+	$arr = explode("\r\n", $sql_text);
+	$arr2 = array();
 	foreach($arr as $key=>$val)
 	{
-		$arr[$key] = trim($val, "\r");
+		$arr[$key] = ltrim($val);
+		if(stripos($arr[$key], "-- ") === 0 || $arr[$key] == "--" || $arr[$key] == "")
+		{
+		}
+		else
+		{
+			$arr2[] = $arr[$key];
+		}
 	}
+	$arr = $arr2;
+	unset($arr2);
+	
 	$append = 0;
 	$skip = 0;
 	$start = 1;
