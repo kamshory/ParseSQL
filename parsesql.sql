@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `member` (
 --
 
 INSERT INTO `member` (`member_id`, `name`, `username`, `gender`, `birth_day`, `time_register`, `time_login`, `ip_login`, `block`, `active`) VALUES
-(1, 'Kamshory, MT', 'kamshory', 'M', '1983-12-10', '2016-04-10 00:00:00', '2016-04-10 00:00:00', '199.188.72.74', 0, 1);
+(1, 'Kamshory, MT', 'kamshory', 'M', '1987-02-20', '2016-04-10 00:00:00', '2016-04-10 00:00:00', '199.188.72.74', 0, 1);
 
 --
 -- Trigger `member`
