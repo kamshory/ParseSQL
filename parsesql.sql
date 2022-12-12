@@ -68,8 +68,8 @@ CREATE TABLE IF NOT EXISTS `phone` (
 --
 
 INSERT INTO `phone` (`member_id`, `phone`, `type`) VALUES
-(1, '+6281266612126', 'M'),
-(1, '+6285271199991', 'M');
+(1, '+6281277777778', 'M'),
+(1, '+6285665355352', 'M');
 
 --
 -- Indexes for dumped tables
